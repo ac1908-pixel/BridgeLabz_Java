@@ -1,0 +1,30 @@
+package corePrograms.javaControlflow.level3;
+
+import java.util.Scanner;
+
+/*
+ Program to check whether a number
+ is an Abundant Number
+*/
+class AbundantNumber {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int number = input.nextInt();
+        int sum = 0;
+
+        // loop to find divisors
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+
+        if (sum > number) {
+            System.out.println("Abundant Number");
+        } else {
+            System.out.println("Not an Abundant Number");
+        }
+    }
+}
