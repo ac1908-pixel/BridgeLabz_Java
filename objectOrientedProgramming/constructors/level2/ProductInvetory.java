@@ -11,7 +11,7 @@ public class ProductInvetory {
     static int totalProducts = 0;
 
     // Parameterized constructor
-    ProductInventory(String productName, double price) {
+    ProductInvetory(String productName, double price) {
         this.productName = productName;
         this.price = price;
         totalProducts++;
